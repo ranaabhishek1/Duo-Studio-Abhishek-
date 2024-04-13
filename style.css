@@ -15,6 +15,18 @@ html,body{
     height: 100%;
     width: 100%;
     color: #fff;
+    background-color: #0F0D0D;
+}
+
+.cursor{
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    position: fixed;
+    background-color: pink;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition:left linear 0.1s top linear 0.1s;
 }
 
 .main{
@@ -24,6 +36,8 @@ html,body{
 .page1{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+    z-index: 9;
 }
 
 #nav{
@@ -86,15 +100,18 @@ letter-spacing: -3px;
 }
 
 .page2{
-    min-height: 130vh;
+    min-height: 80vh;
     width: 100%;
-    padding: 5vw 0vw;
+    padding: 5vw 5vw;
+    border-bottom: 2px solid #888;
+    position: relative;
+    z-index: 9;
 }
 
 .page2 h1{
     font-size: 7vw;
-    font-weight: 100;
-    color: yellow;
+    font-weight: 500;
+    color: #000;
 }
 
 .page2-container{
@@ -117,12 +134,15 @@ letter-spacing: -3px;
 font-size: 4vw;
 font-weight: 100;
 font-weight:100;
-
+color:#111;
+line-height: 4vw;
 }
 
 .page2-right p{
     font-size: 2vw;
     font-weight: 100;
+    color:#111;
+
 }
 
 .page2-right button{
@@ -133,3 +153,147 @@ font-weight:100;
     background-color: #EDBFFF;
     margin-top: 2vw;
 }
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 8vw;
+    padding-bottom: 10vh;
+    position: relative;
+    z-index: 9;
+    border-bottom: 2px solid #888;
+}
+
+.page3 h1{
+    color: #111;
+    font-size: 6.8vw;
+    font-weight: 500;
+    margin-left: 8vw;
+}
+
+.page3-part1{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.page3-part1 img{
+    height: 32vw;
+    margin-top: 28vh;
+}
+
+
+.page3-part1 video{
+    height: 32vw;
+}
+
+
+.page3-part2{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.page3-part2 img{
+    height: 35vw;
+    margin-right: 5vw;
+}
+
+
+.page3-part2 video{
+    height: 35vw;
+    margin-top: 20vh;
+}
+
+.page3-last{
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 3vw;
+    margin-top: 8vh;
+}
+
+.page3-last h3{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.page3-last button{
+    font-size: 1vw;
+    padding: 5vw 3vw;
+    border-radius: 50%;
+    border: none;
+    background-color: pink;
+    cursor: pointer;
+}
+
+.page3-last button:hover{
+    background-color: lightblue;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    z-index: 9;
+    padding: 10vw;
+}
+
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.elem img{
+    position: absolute;
+    height: 60vh;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transform: translateY(10%) rotate(2deg);
+}
+
+.elem img:nth-child(1){
+    left: 2%;
+}
+
+
+.elem img:nth-child(3){
+    right: -9%;
+    height: 45vh;
+}
+
+.text-div{
+    height: 18vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.elem h1{
+    font-size: 7.5vw;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+.elem:hover h1{
+    transform: translateY(-100%);
+}
+
+.elem:hover img{
+ opacity: 1;
+ transform: translateY(0%) rotate(0deg);
+}
+
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #888;
+    position: relative;
+    z-index: 9;
+}
+
